@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout}">
+
+<title>SafeSpace</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+	<div class="w3-container">
+
+		<h2>SafeSpace</h2>
+
+		<div class="w3-bar w3-teal">
+		<!-- Fragment -->
+		<div layout:fragment="content">
+			<a th:href="@{/j}" class="w3-bar-item w3-button">About us</a> 
+			<a th:href="@{/j}" class="w3-bar-item w3-button">Contact</a> 
+			<a th:href="@{/guest/newGuest}" class="w3-bar-item w3-button">Sign In </a> 
+			<a th:href="@{/login}" class="w3-bar-item w3-button">Log In</a>
+		</div>
+
+	</div>
+
+
+</div>
+
+
+</body>
+</html>
