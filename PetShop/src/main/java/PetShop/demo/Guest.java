@@ -30,7 +30,7 @@ public class Guest {
 
 //Relationship type:
 	@OneToMany (mappedBy = "guest" , cascade = CascadeType.ALL)
-	public List<Pcr> pcr = new ArrayList<>();
+	public List<Analisys> pcr = new ArrayList<>();
 	
 	
 //Constructor:	
@@ -109,7 +109,7 @@ public class Guest {
 		this.email = email;
 	}
 
-	public List<Pcr> getPcr() {
+	public List<Analisys> getPcr() {
 		return pcr;
 	}
 	
@@ -126,7 +126,7 @@ public class Guest {
 	//adding method:
 	
 
-	public void addPcr(Pcr pcr) {
+	public void addPcr(Analisys pcr) {
 		this.pcr.add(pcr);
 		pcr.setGuest(this);
 	}

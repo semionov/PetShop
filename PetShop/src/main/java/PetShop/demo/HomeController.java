@@ -8,7 +8,7 @@ package PetShop.demo;
 
   @Autowired private GuestRepository guestRepository;
   
-  @Autowired private PcrRepository pcrRepository;
+  @Autowired private AnalisysRepository pcrRepository;
   
   // ------------------------------home ---------------------------
   

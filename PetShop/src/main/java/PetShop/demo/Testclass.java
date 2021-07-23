@@ -13,7 +13,7 @@
   
   @Autowired public GuestRepository guestRepository;
   
-  @Autowired public PcrRepository pcrRepository;
+  @Autowired public AnalisysRepository pcrRepository;
   
   
   public void run(String... args) throws Exception {
@@ -33,8 +33,8 @@
   
   SimpleDateFormat formater = new SimpleDateFormat("yyyy-MM-dd");
   
-  Pcr pcr1 = new Pcr (formater.parse("2019-10-15") , true); Pcr pcr2 = new Pcr
-  (new Date(0), false); Pcr pcr3 = new Pcr ();
+  Analisys pcr1 = new Analisys (formater.parse("2019-10-15") , true); Analisys pcr2 = new Analisys
+  (new Date(0), false); Analisys pcr3 = new Analisys ();
   
   pcrRepository.save(pcr1); pcrRepository.save(pcr2); pcrRepository.save(pcr3);
   

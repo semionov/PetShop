@@ -16,7 +16,7 @@ import javax.persistence.ManyToOne;
 
 @Entity
 @Table
-public class Pcr {
+public class Analisys {
 	
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -32,14 +32,14 @@ public Guest guest;
 	
 	
 //Constructor:			
-	public Pcr(Date extractionDate, boolean result) {
+	public Analisys(Date extractionDate, boolean result) {
 		super();
 		//Id = id; 	 not necessary JPA's annotation "@id" has already created it.
 		this.extractionDate = extractionDate;
 		this.result = result;
 	}
 
-	public Pcr() {
+	public Analisys() {
 		super();
 	}
 
